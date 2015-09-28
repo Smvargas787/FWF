@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body ng-app="MyFirstApp" ng-controller="MyFirstController"> <!--Why?-->
+    <input type="text" ng-model="test"/>
+    <!--{{5+2}}-->
+    <p>{{test}}</p>
+   <small>{{140 - test.length}}</small>
+   <button ng-click="uponClicking()">Click Me!</button>
+
+   <hr>
+   <form ng-submit="formSubmit()">
+      <label>Name:
+          <input type="text" ng-model="inputName"/>
+      </label>
+      <button type="submit">Submit Name</button>
+   </form>
+
+   <ul>
+       <li ng-repeat="n in anArray track by $index">{{ n }}</li>
+   </ul>
+
+</body>
+</html>
