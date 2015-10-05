@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body ng-app="MorningSucks" ng-controller="MyController">
+    <!--{{test}}   = Tests if it works-->
+
+    <form ng-submit="onFormSubmit()">
+        <label>Favorite Beverage:
+            <input type="text" ng-model="bev.name"/>
+        </label>
+        <label>Beverage Price:
+            <input type="text" ng-model="bev.price"/>
+        </label>
+        <button type="submit">Save</button>
+    </form>
+
+    <ul>
+        <li ng-repeat="item in bevArray track by $index">
+
+            {{ item.name }} ({{ item.price | currency }})
+
+            <!--{{item}}  &lt;!&ndash;//makes it only 1 time&ndash;&gt;-->
+            <button ng-click="deleteItem($index)">X</button>  <!--Delete Button-->
+        </li>
+    </ul>
+</body>
+</html>

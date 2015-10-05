@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Employee Directory</title>
+        <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js">
+        </script>
+        <script type='text/javascript' src="js/main.js"></script>
+    </head>
+    <body ng-app='employeeApp' ng-controller='eController'>
+
+        <form ng-submit='addEmp()'>
+            <input type="text" placeholder="Mike Will Made" ng-model='employee.name'>
+            <input type="text" placeholder="Loser Blvd" ng-model='employee.street'>
+            <input type="text" placeholder="Long Island" ng-model='employee.city'>
+            <input type="text" placeholder="New York" ng-model='employee.state'>
+            <input type="text" placeholder="63124" ng-model='employee.zip'>
+            <input type='submit' value='Add Employee'>
+        </form>
+
+        <ul>
+            <li ng-repeat='item in backstageArr track by $index'>
+                {{item.name}} {{item.street}} {{item.city}} {{item.state}} {{item.zip}}
+                <button ng-click='GetTheHellOut($index)'>X</button>
+            </li>
+        </ul>
+
+    </body>
+</html>

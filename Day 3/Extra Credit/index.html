@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Pizza Toppings</title>
+</head>
+<script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js">
+</script>
+<script type='text/javascript' src="js/app.js"></script>
+
+<body ng-app="pizzaApp" ng-controller="pCon">
+    {{test}}
+
+    <form ng-submit="formSubmit()">
+        <input type="text" ng-model = "pizza.name">
+        <input type="textarea" ng-model="pizza.num">
+        <input type="text" ng-model="pizza.size">
+
+        <button type="submit">Place Order</button>
+    </form>
+
+        <ul>
+            <li ng-repeat="item in pArray track by $index">
+                {{item.name}} {{item.num}} {{item.size}}
+                <button ng-click="removePizza($index)">X</button>
+            </li>
+        </ul>
+
+</body>
+</html>

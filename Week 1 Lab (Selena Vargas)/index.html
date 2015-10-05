@@ -13,22 +13,23 @@
 
         <h1>Super Grocery List</h1>
 
-        <p>Items</p>
-            <form ng-submit="formSubmit()">
+        <h2>Items:<small>{{gArray.length}}</small></h2>
+
+        <form ng-submit="formSubmit()">
                 <label>
-                    <input type="text" ng-model="inputName"/>
+                    <input type="text" ng-model="food.inputName"/>
+
                 </label>
                 <button type="submit">Save</button>
             </form>
 
                 <ul>
-                    <li ng-repeat="n in gArray track by $index">{{ n }}   -x-  </li>
+                    <li ng-repeat="n in gArray track by $index">{{ n.inputName }}
+                        <button ng-click="deleteItem($index)">X</button>
+                    </li>
+
                 </ul>
 
     </section>
-
-
-
-
 </body>
 </html>

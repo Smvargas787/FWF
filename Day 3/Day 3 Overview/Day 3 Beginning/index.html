@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js">
+    </script>
+        <script type='text/javascript' src="js/app.js"></script>
+    <title>Candy</title>
+    </head>
+    <body ng-app='CandyApp' ng-controller='CandyController'>
+    
+        <form ng-submit="addCandy()">
+            <input type="text" placeholder="Candy" ng-model="candy.name" />
+            <input type="number" ng-model="candy.num"/>
+            <input type="submit" value="Add Candy" />
+        </form>
+        
+        <ul>
+            <li ng-repeat="item in dataArr track by $index">
+                {{   item.name   }} {{   item.num   }}
+                <button ng-click="removeCandy($index)" >Remove Candy</button>
+            </li>
+            
+        </ul>
+    </body>
+</html>
