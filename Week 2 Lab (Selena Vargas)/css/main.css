@@ -1,0 +1,51 @@
+/*Body*/
+body{
+    background-color: #808080;
+    color: #8b0000;
+
+}
+
+/*Container*/
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 200px;
+    background:rgba(255,255,255, 0.3);  /*question? to make it wrap around the whole form*/
+}
+
+/*Headings*/
+h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+/*Form*/
+form{
+    width: 100px;
+    margin: 0 auto;
+}
+
+input{
+    padding: 3px 100px 4px 2px;
+    margin-bottom: 10px;
+}
+
+label:first-of-type{
+    font-weight: bold;
+    font-style: italic;
+    color: #000;
+    position: relative;
+    bottom: 20px;
+    left: 60px;
+}
+
+label{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/*List*/
+ul{
+    border: 3px #8b0000;
+}

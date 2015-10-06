@@ -6,16 +6,34 @@
         <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js">
         </script>
         <script type='text/javascript' src="js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body ng-app='employeeApp' ng-controller='eController'>
 
+    <section>
+
+        <h1>Employee Roster</h1>
+
         <form ng-submit='addEmp()'>
-            <input type="text" placeholder="Mike Will Made" ng-model='employee.name'>
-            <input type="text" placeholder="Loser Blvd" ng-model='employee.street'>
-            <input type="text" placeholder="Long Island" ng-model='employee.city'>
-            <input type="text" placeholder="New York" ng-model='employee.state'>
-            <input type="text" placeholder="63124" ng-model='employee.zip'>
-            <input type='submit' value='Add Employee'>
+            <label>
+                Add an Entry
+            </label>
+            <label> Name:
+                <input type="text" placeholder="Kevin Hart" ng-model='employee.name'>
+            </label>
+            <label>Street:
+                <input type="text" placeholder="Pineapples Ave" ng-model='employee.street'>
+            </label>
+            <label>City:
+                <input type="text" placeholder="Philadelphia" ng-model='employee.city'>
+            </label>
+            <label>State:
+                <input type="text" placeholder="Pennsylvania" ng-model='employee.state'>
+            </label>
+            <label>Zip Code:
+                <input type="text" placeholder="19019" ng-model='employee.zip'>
+            </label>
+                <input type='submit' value='Add Employee'>
         </form>
 
         <ul>
@@ -24,6 +42,9 @@
                 <button ng-click='GetTheHellOut($index)'>X</button>
             </li>
         </ul>
+
+    </section>
+
 
     </body>
 </html>
