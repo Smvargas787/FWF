@@ -5,6 +5,8 @@
         <title>Employee Directory</title>
         <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js">
         </script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-route.min.js">
+        </script>
         <script type='text/javascript' src="js/main.js"></script>
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
@@ -13,12 +15,10 @@
     <section>
 
         <h1>Employee Roster</h1>
+        <h2>Add an Entry</h2>
 
         <form ng-submit='addEmp()'>
-            <label>
-                Add an Entry
-            </label>
-            <label> Name:
+            <label class="name"> Name:
                 <input type="text" placeholder="Kevin Hart" ng-model='employee.name'>
             </label>
             <label>Street:
@@ -33,7 +33,7 @@
             <label>Zip Code:
                 <input type="text" placeholder="19019" ng-model='employee.zip'>
             </label>
-                <input type='submit' value='Add Employee'>
+                <input class="submit" type='submit' value='Add Employee'>
         </form>
 
         <ul>

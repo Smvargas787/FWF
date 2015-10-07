@@ -1,4 +1,13 @@
-var app = angular.module('employeeApp', []);
+var app = angular.module('employeeApp', ["ngRoute"]);
+
+app.config(function($routeProvider){
+    $routeProvider
+        .when("/index",{
+            controller:"eController",
+            templateUrl:"index.html"
+        })
+
+})
 
 app.controller('eController', function($scope, empService){
     $scope.employee = {};
