@@ -1,0 +1,11 @@
+<h1>Edit Team: {{sport.name}}</h1>
+
+<form ng-submit="editTeam()">
+    <label>League:
+        <input type="text" placeholder="Baseball" ng-model="edit.catagory">
+    </label>
+    <label>Team:
+        <input type="text" placeholder="Ny Yankees" ng-model="edit.name">
+    </label>
+    <input type="submit" value="Submit" />
+</form>

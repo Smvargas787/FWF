@@ -1,0 +1,15 @@
+<h1>Add a Movie List</h1>
+
+<ul>
+    <li ng-repeat="num in movieArray track by $index">
+        <p>
+            <a href="#/details/{{$index}}">
+                {{num.title}}
+            </a>
+        </p>
+        <p>{{num.title}}</p>
+        <p>{{num.rating}}</p>
+        <button ng-click="removeMovie($index)">Remove</button>
+
+    </li>
+</ul>

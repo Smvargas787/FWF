@@ -1,0 +1,17 @@
+<h1>Teams</h1>
+
+<ul>
+    <li ng-repeat="team in sportsArray track by $index">
+        <p>
+            <a href="#/history/{{$index}}">
+                {{team.name}}
+            </a>
+        </p>
+        <p>{{team.catagory}} {{team.name}}</p>
+
+        <a href="#/edit/{{$index}}">Edit
+        </a>
+
+        <button ng-click="removeTeam($index)">Delete</button>
+    </li>
+</ul>
