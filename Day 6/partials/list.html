@@ -1,0 +1,14 @@
+
+<ul>
+    <li ng-repeat="shoe in shoeArray track by $index">
+        {{shoe.type}} {{shoe.num}} {{shoe.size}}
+
+        <p>
+            <a href="#/details/{{$index}}">
+                {{shoe.type}}
+            </a>
+
+        <button ng-click="removeShoe ($index)">Remove
+        </button>
+    </li>
+</ul>

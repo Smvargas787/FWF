@@ -1,0 +1,17 @@
+<h1>Cupcakes Tracked</h1>
+
+<ul>
+    <li ng-repeat="cupcake in cakeArray track by $index">
+        {{cupcake.flavor}} {{cupcake.frosting}} {{cupcake.theme}} {{cupcake.text}}
+
+        <!--Might have to fix if no work?-->
+        <p>
+            <a href="#/details/{{$index}}">
+                {{cupcake.theme}}
+
+
+            </a>
+        </p>
+        <button ng-click="removeCake($index)"></button>
+    </li>
+</ul>
