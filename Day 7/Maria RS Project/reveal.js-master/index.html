@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Maria.js - The Real MVC. The Small Talk MVC. The Gang of Four MVC.</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Maria.js</h1>
+					<h3>THE REAL MVC. THE SMALL TALK. THE GANG OF FOUR MVC.</h3>
+					<p>
+						<small>Selena Vargas - 10/21/15</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>The Real...MVC?</h2>
+					<p>
+						Model: Contains domain data. When the model changes it informs its observers.
+						<br>
+						View: Observes a model and represents its model's current position.
+						<br>
+						Controller: Decides what happens when a user interacts with the controller's view.
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>MVC Centered</h2>
+						<p>Maria is a framework that mostly focuses on bulding MVC centered applications in Javascript.
+						</p>
+					</section>
+					<section>
+						<h2>Smalltalk VS Maria - Round 1:</h2>
+						<p>
+							There's talk about Smalltalk being very similiar in object-orientated language like Maria.
+							As Smalltalk is also an MVC centered app, Maria and Smalltalk programmers seem to clash on the languages quite
+							frequently.
+						</p>
+					</section>
+					<section>
+						<h2>Smalltalk VS Maria - Round 2:</h2>
+						<p>
+							Smalltalk: Framework that is extradorinary simple and well-designed. However it
+							is outdated compared to Maria.
+							<br>
+							Maria: Is described as feature-complete. It's able to make apps cleaner
+							and easier as it provides places for the behavior and concerns of the app
+							that developer's will easily understand. Not to mention that Maria is more upgraded
+							to use in the modern day.
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>History Of Maria</h2>
+					<p>
+						Devloped by: Peter Michaux.
+						<br>
+						Background: Maria has been an on and off worked on framework since 2012.
+					</p>
+				</section>
+
+				<section>
+					<!--<h2>Timeline:</h2>-->
+					<!--<p>-->
+						<!--PHP + GD/ImageMagick (2006-2008)-->
+					<!--</p>-->
+					<!--<a href="http://addyosmani.com/blog/jqueryuicoverflow/">-->
+						<!--<img width="378" height="238" src="images/php1.png" alt="Up arrow" style="">-->
+					<!--</a>-->
+					<!--<p>-->
+						<!--The earliest attempts of implementing CoverFlow came greatly from-->
+						<!--server side image processing. The artwork would be stored on a server and read through-->
+						<!--PHP script. Which equals the image being processed and pushed back to the browser.-->
+						<!--&lt;!&ndash;Disadvantages: CF is animation focused so without certain elegance it cannot be implemented&ndash;&gt;-->
+						<!--&lt;!&ndash;the same.&ndash;&gt;-->
+					<!--</p>-->
+
+				</section>
+
+				<section>
+					<!--<h2>Timeline:</h2>-->
+					<!--<p>-->
+						<!--Flash (2007)-->
+					<!--</p>-->
+					<!--<a href="http://addyosmani.com/blog/jqueryuicoverflow/">-->
+						<!--<img width="378" height="238" src="images/flash.png" alt="Up arrow" style="">-->
+					<!--</a>-->
+					<!--<p>-->
+						<!--Disadvantages towards using PHP, it had limitations. Developers realzied that and turned to-->
+						<!--Adobe's Flash to implement the CF effect instead. Flash at the time was perfect for a-->
+						<!--decent framework use. However a non-plugin approach was more beneficial and desirable.-->
+					<!--</p>-->
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						<!--## Timeline:-->
+
+						<!--<p>-->
+							<!--JavaScript + Canvas (2007-2010)-->
+						<!--</p>-->
+						<!--<a href="http://addyosmani.com/blog/jqueryuicoverflow/">-->
+							<!--<img width="378" height="238" src="images/java.png" alt="Up arrow" style="">-->
+						<!--</a>-->
+						<!--<p>-->
+							<!--Canvas was an ideal element to use for CoverFlow since it had all the drawing-->
+							<!--capabilities you'd acquire in flash and even being able to view it in the browser without-->
+							<!--a plugin was greatly beneficial. The only disadvantage about canvas is that it's not as-->
+							<!--fast or snappy as using CSS.-->
+						<!--</p>-->
+
+						<!--Write content using inline or external Markdown.-->
+						<!--Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).-->
+
+						<!--```-->
+						<!--<section data-markdown>-->
+						  <!--## Markdown support-->
+
+						  <!--Write content using inline or external Markdown.-->
+						  <!--Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).-->
+						<!--</section>-->
+						<!--```-->
+					</script>
+				</section>
+
+				<section>
+					<section id="fragments">
+						<!--<h2>Timeline:</h2>-->
+						<!--<p>-->
+							<!--Jquery CSS3 CoverFlow (2008-2010)-->
+						<!--</p>-->
+						<!--<a href="http://addyosmani.com/blog/jqueryuicoverflow/">-->
+							<!--<img width="378" height="238" src="images/jquery.png" alt="Up arrow" style="">-->
+						<!--</a>-->
+						<!--<p>-->
+							<!--Advantage for CF is that CSS supports multiple numbers of-->
+							<!--transformations. Using Jquery makes it possible to transform parameters required to make each cover art-->
+							<!--to the CF with a straight-forward effect allowing the user to skip to the next or previous cover with ease.-->
+						<!--</p>-->
+						<!--<h2>Jquery CSS3 CoverFlow (2008-2010)</h2>-->
+						<!--<p>Hit the next arrow...</p>-->
+						<!--<p class="fragment">... to step through ...</p>-->
+						<!--<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>-->
+
+						<!--<aside class="notes">-->
+							<!--This slide has fragments which are also stepped through in the notes window.-->
+						<!--</aside>-->
+					</section>
+					<section>
+						<!--<h2>Personal Example</h2>-->
+					<!--<pre><code class="hljs" data-trim contenteditable>-->
+						<!--/**-->
+						<!--* Flow to the right-->
+						<!--**/-->
+						<!--function flowRight() {-->
+
+						<!--// check if has albums-->
+						<!--// on the right side-->
+						<!--if( _index ) {-->
+						<!--_index--;-->
+						<!--render();-->
+						<!--}-->
+
+						<!--};-->
+
+						<!--* Enable left & right keyboard events-->
+						<!--**/-->
+						<!--function keyDown( event ) {-->
+
+						<!--switch( event.keyCode ) {-->
+						<!--case 37: flowRight(); break; // left-->
+						<!--case 39: flowLeft(); break; // right-->
+						<!--}-->
+
+						<!--};-->
+
+
+						<!--document.addEventListener('DOMContentLoaded', function() {-->
+						<!--var wheel_data = {"elems":-->
+						<!--[{"name": "Drake", "file": "icons/drake.png"},-->
+						<!--{"name": "J Cole", "file": "icons/J cole.png"},-->
+						<!--{"name": "The Weeknd", "file": "icons/theweeknd.png"},-->
+						<!--{"name": "Mack Wilds", "file": "icons/nylovestory.png"},-->
+						<!--{"name": "K Camp", "file": "icons/kcamp.png"},-->
+						<!--{"name": "Faboulous", "file": "icons/fabolous.png"},-->
+						<!--{"name": "Logic", "file": "icons/logic.png"}]};-->
+						<!---->
+					<!--</code></pre>-->
+						<!--<p>View outcome of <a href="http://localhost:63342/Web%20I%20&%20A/Day%207/Personal%20Ex.%20Coverflow/jswheel-master/demo/index.html">personal example.</a></p>-->
+					<!--</section>-->
+
+				<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
+					</p>
+				</section>
+
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						reveal.js comes with a few themes built in: <br>
+						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+					</p>
+				</section>
+
+				<section>
+					<section data-background="#dddddd">
+						<h2>Slide Backgrounds</h2>
+						<p>
+							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+						</p>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+						<h2>Image Backgrounds</h2>
+						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+						<h2>Tiled Backgrounds</h2>
+						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					</section>
+					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Video Backgrounds</h2>
+							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+						</div>
+					</section>
+					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+						<h2>... and GIFs!</h2>
+					</section>
+				</section>
+
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+					</p>
+					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+				</section>
+
+				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						You can override background transitions per-slide.
+					</p>
+					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+				</section>
+
+				<section>
+					<h2>Pretty Code</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+					</code></pre>
+					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>
+
+				<section>
+					<h2>Marvelous List</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Tabular Tables</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Value</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>Clever Quotes</h2>
+					<p>
+						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
+					</p>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Intergalactic Interconnections</h2>
+					<p>
+						You can link between slides internally,
+						<a href="#/2/3">like this</a>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Speaker View</h2>
+					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+					<p>Press the <em>S</em> key to try it out.</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
+					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+				</section>
+
+				<section>
+					<h2>Global State</h2>
+					<p>
+						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+						will be added as a class to the document element when the slide is open. This lets you
+						apply broader style changes, like switching the page background.
+					</p>
+				</section>
+
+				<section data-state="customevent">
+					<h2>State Events</h2>
+					<p>
+						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					</p>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+Reveal.addEventListener( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Take a Moment</h2>
+					<p>
+						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+					</p>
+				</section>
+
+				<section>
+					<h2>Much more</h2>
+					<ul>
+						<li>Right-to-left support</li>
+						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="http://slides.com">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

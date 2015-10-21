@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Endless Scroll App</title>
+
+    <link href="css/Products.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+    <noscript>
+        <p>This application uses JavaScript. Please enable JavaScript in your browser and refresh the page.</p>
+    </noscript>
+    <script>
+        document.write('<p id="loading">loading...</p>');
+    </script>
+
+    <script src="../lib/maria/maria.js"></script>
+    <!-- JSON polyfill for old browsers -->
+    <script src="../lib/JSON/json2.js"></script>
+    <!-- XMLHttpRequest wrapper library (a.k.a. Ajax library) -->
+    <script src="../lib/myth/myth.js"></script>
+
+    <script src="js/namespace.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/models/ProductModel.js"></script>
+    <script src="js/models/ProductsModel.js"></script>
+    <script src="js/templates/ProductTemplate.js"></script>
+    <script src="js/templates/ProductsTemplate.js"></script>
+    <script src="js/views/ProductView.js"></script>
+    <script src="js/views/ProductsView.js"></script>
+    <script src="js/controllers/ProductsController.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+</html>

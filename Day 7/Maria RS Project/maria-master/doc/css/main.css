@@ -1,0 +1,236 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+body {
+    line-height: 1.4;
+    font-family: 'Lato', sans-serif;
+    color: #222;
+}
+
+a img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color:#3a7d9c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    margin: 20px 0;
+    color: #3a7d9c;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-family: 'Lato', sans-serif;
+}
+
+pre {
+    width:100%;
+    overflow:auto;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    border-bottom: 1px solid #dbdad6;
+    height: 105px;
+    text-align: right;
+}
+
+.header .navigation {
+    padding-top: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.header .navigation li {
+    display: inline;
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+.header .navigation a {
+    color: #333;
+}
+
+.header .navigation a:hover,
+.header .navigation a.active {
+    color: #3a7d9c;
+}
+
+.header .navigation .logo {
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+.content li {
+    margin-bottom: 0.25em;
+    margin-top: 0.25em;
+}
+
+.footer {
+    clear: both;
+    margin: 30px 0 0 0;
+    padding: 20px 0;
+    border-top: 1px solid #dbdad6;
+    color:#333;
+    text-align: center;
+    font-size: 13px;
+    font-weight: lighter;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer a {
+    color: #3a7d9c;
+}
+
+/* for index.html ------------------------------------------------ */
+
+.tagline {
+    padding: 20px 0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #dbdad6;
+}
+
+.tagline h2,
+.tagline h3 {
+    margin: 0;
+    text-align: center;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+
+.tagline span {
+    color: #3a7d9c;
+}
+
+.tagline h2 {
+    color: #000000;
+    font-size: 33px;
+}
+
+.tagline h3 {
+    color: #333333;
+    font-size: 22px;
+}
+
+.intro {
+    float:left;
+    width: 725px;
+    color: #333;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.small-aside {
+    float: left;
+    width: 180px;
+    padding: 0 0 20px 50px;
+}
+
+.btn-download {
+    display: block;
+    width: 117px;
+    height: 63px;
+    line-height: 63px;
+    margin: 0;
+    padding: 0 0 0 50px;
+    color:#fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    background: url('../img/download-btn.png');
+}
+
+.boxes {
+    clear: both;
+    overflow: hidden;
+    padding-top: 60px;
+    border-top: 1px solid #dbdad6;
+}
+
+.boxes .box {
+    float:left;
+    width: 225px;
+    margin-right: 15px;
+}
+
+.boxes .btn-box {
+    width: 225px;
+    height: 152px;
+    background-image: url('../img/sprite-home-btns.png');
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.boxes .quick-start {
+    background-position: 0 0;
+}
+
+.boxes .quick-start:hover {
+    background-position: 0 -153px;
+}
+
+.boxes .plugins {
+    background-position: -226px 0;
+}
+
+.boxes .plugins:hover {
+    background-position: -226px -153px;
+}
+
+.boxes .api-documentation {
+    background-position: -452px 0;
+}
+
+.boxes .api-documentation:hover {
+    background-position: -452px -153px;
+}
+
+.boxes .github-project {
+    background-position: -678px 0;
+}
+
+.boxes .github-project:hover {
+    background-position: -678px -153px;
+}
+
+.boxes h4 {
+    margin: 20px 0 0;
+    color: #333;
+    font-size: 24px;
+    font-weight: lighter;
+    font-family: 'Lato', sans-serif;
+}
+
+.boxes .box {
+    color: #666;
+    font-size: 13px;
+}
+
+.ir {
+    display: block;
+    border: 0;
+    text-indent: -999em;
+    overflow: hidden;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr;
+    *line-height: 0;
+}
